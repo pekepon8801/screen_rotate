@@ -9,8 +9,11 @@ DEVICE="ELAN Touchscreen"
 PROP="Coordinate Transformation Matrix"
 
 monitor-sensor | while read -r str; do
+    if [ -e ~/bin/rotate/rotatelock.txt ]; then
+        continue
+    fi
+
     arr=(`echo $str`)
-    #echo ${arr[0]}:${arr[3]}
     if [ ${arr[0]}="Accelerometer" ]; then
         case "${arr[3]}" in
 	        "normal")
