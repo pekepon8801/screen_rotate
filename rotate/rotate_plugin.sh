@@ -1,10 +1,10 @@
 #!/bin/bash
 
 if [ -e ~/bin/rotate/rotatelock.txt ]; then
-    echo "<img>${HOME}/bin/rotate/screen_rotate_lock_24.png</img>"
+    echo "<img>${HOME}/bin/rotate/screen_rotate_lock_24.svg</img>"
     TOOLTIP="Screen rotation is lock."
 else
-    echo "<img>${HOME}/bin/rotate/screen_rotate_24.png</img>"
+    echo "<img>${HOME}/bin/rotate/screen_rotate_24.svg</img>"
     TOOLTIP="Screen rotation is possible."
 fi
 
